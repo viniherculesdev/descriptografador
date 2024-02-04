@@ -56,5 +56,3 @@ document.getElementById('buttonDescripto').addEventListener('click', function() 
   container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
   sectionImg.style.display = 'none';// fazendo desaparecer a img
 });
-
-//test
