@@ -9,22 +9,22 @@ document.getElementById("buttonCripto").addEventListener("click", clickCripto); 
 document.getElementById("buttonDescripto").addEventListener("click", clickDescripto); // adicionando a funçao onclick para o button descriptografar
 
 function clickCripto() { // no clique
-let container = document.querySelector("#container")
   if(textarea.value == "") {
     alert("Digite o texto a ser criptografado") //se o textarea estiver vazio vai mandar um alert
       }else{
       cripto() //se nao vai rodar funçao criptogtafando e substituindo o html do lado direto 
-      }
+    
+    }
     ;
   }
 
 function clickDescripto() { // no clique
-    let container = document.querySelector("#container")
     if(textarea.value == "") {
       alert("Digite o texto a ser descriptografado") //se o textarea estiver vazio vai mandar um alert
         }else{
         descripto() //se nao vai rodar funçao criptogtafando e substituindo o html do lado direto 
-        }
+        
+      }
       ;
     }
   
@@ -45,16 +45,15 @@ function descripto(){
     let textoCriptografado = descriptografar(value) // criptografando o texto
     container.innerHTML = `${textoCriptografado}` // jogando na area de output
     textarea.value = ""
+    
     }
 
 document.getElementById('buttonCripto').addEventListener('click', function() {
-  container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
-  sectionImg.style.display = 'none';// fazendo desaparecer a img
-});
+    container.style.display = 'block'; // Faz o output aparecer
+    sectionImg.style.display = 'none'; // Faz a imagem desaparecer
+    });
 
 document.getElementById('buttonDescripto').addEventListener('click', function() {
-  container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
-  sectionImg.style.display = 'none';// fazendo desaparecer a img
+    container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
+    sectionImg.style.display = 'none';// fazendo desaparecer a img
 });
-
-//test

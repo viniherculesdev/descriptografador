@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projeto Decodificador</title>
         <link rel="stylesheet" href="/styles.css">
-        <script src="/script.js"></script>
+        <script src="/script.js" defer></script>
     
     </head>
     <body class="container">
@@ -17,7 +17,7 @@
 
             <div class="container__main__central">
 
-                <textarea class="container__main__central__textAreaInput" placeholder="Digite seu texto"></textarea>
+                <textarea id="textarea" class="container__main__central__textAreaInput" placeholder="Digite seu texto"></textarea>
 
                 <div class="container__main__central__info">
                     <img class="container__main__central__img" src="./assets/img/alert-logo.svg">
@@ -25,10 +25,10 @@
                 </div>
 
                 <div class="container__main__central__buttons">
-                    <button class="container__main__central__button__C" type="button">
+                    <button class="container__main__central__button__C" type="button" id="buttonCripto">
                         Criptografar
                     </button>
-                    <button class="container__main__central__button__D" type="button">
+                    <button class="container__main__central__button__D" type="button" id="buttonDescripto">
                         Descriptografar
                     </button>
 
@@ -36,7 +36,14 @@
                 
             </div>
                 <div class="container__main__right">
-                    <section class="container__main__right__section__output">
+                    <section class="container__main__right__output">
+
+                        <textarea id ="container" class="container__main__right__section__output__textarea"></textarea>
+                        
+                    </section>
+                    <section id="sectionImg" class="container__main__right__section__output">
+
+                        </textarea>
                         <img class="container__main__right__section__output__img" src="/assets/img/High quality products 1 1.svg">
     
                         <div class="container__main__right__section__output__text">
