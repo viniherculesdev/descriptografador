@@ -51,9 +51,11 @@ function descripto(){
 document.getElementById('buttonCripto').addEventListener('click', function() {
     container.style.display = 'block'; // Faz o output aparecer
     sectionImg.style.display = 'none'; // Faz a imagem desaparecer
+    copy.style.display = 'block';
     });
 
 document.getElementById('buttonDescripto').addEventListener('click', function() {
     container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
     sectionImg.style.display = 'none';// fazendo desaparecer a img
+    copy.style.display = 'block';
 });
