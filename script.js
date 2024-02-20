@@ -29,7 +29,8 @@ function clickDescripto() { // no clique
     }
   
 const container = document.getElementById('container');
-container.style.display = 'none'; //deixando o container onde fica o output sem aparecer
+container.style.display = 'none';
+ //deixando o container onde fica o output sem aparecer
 
 function cripto(){
   let textarea = document.getElementById('textarea')
@@ -51,11 +52,21 @@ function descripto(){
 document.getElementById('buttonCripto').addEventListener('click', function() {
     container.style.display = 'block'; // Faz o output aparecer
     sectionImg.style.display = 'none'; // Faz a imagem desaparecer
-    copy.style.display = 'block';
+
+    const copyButton = document.getElementById('copy');
+    copyButton.style.display = 'block';
     });
 
 document.getElementById('buttonDescripto').addEventListener('click', function() {
     container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
     sectionImg.style.display = 'none';// fazendo desaparecer a img
-    copy.style.display = 'block';
+
+    const copyButton = document.getElementById('copy');
+    copyButton.style.display = 'block';
 });
+
+function copiar(){
+  navigator.clipboard.writeText(container.value).then(() => {
+    alert('Texto copiado')
+  })
+}
