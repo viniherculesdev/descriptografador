@@ -15,7 +15,6 @@ function clickCripto() { // no clique
       cripto() //se nao vai rodar funçao criptogtafando e substituindo o html do lado direto 
     
     }
-    ;
   }
 
 function clickDescripto() { // no clique
@@ -25,7 +24,6 @@ function clickDescripto() { // no clique
         descripto() //se nao vai rodar funçao criptogtafando e substituindo o html do lado direto 
         
       }
-      ;
     }
   
 const container = document.getElementById('container');
@@ -53,20 +51,20 @@ document.getElementById('buttonCripto').addEventListener('click', function() {
     container.style.display = 'block'; // Faz o output aparecer
     sectionImg.style.display = 'none'; // Faz a imagem desaparecer
 
-    const copyButton = document.getElementById('copy');
-    copyButton.style.display = 'block';
+    const copyButton = document.getElementById('copy'); //Acessando o botao de id copy
+    copyButton.style.display = 'block'; //Fazendo aparecer apos interaçao com botao 'criptografar'
     });
 
 document.getElementById('buttonDescripto').addEventListener('click', function() {
     container.style.display = 'block'; //fazendo aparecer o output no container que estava escondido
     sectionImg.style.display = 'none';// fazendo desaparecer a img
 
-    const copyButton = document.getElementById('copy');
-    copyButton.style.display = 'block';
+    const copyButton = document.getElementById('copy'); //Acessando o botao de id copy
+    copyButton.style.display = 'block'; //Fazendo aparecer apos interaçao com botao 'descriptografar'
 });
 
-function copiar(){
+function copiar(){ // criando funçao para copiar o texto do output
   navigator.clipboard.writeText(container.value).then(() => {
-    alert('Texto copiado')
+    alert('Texto copiado') //mandando um alert para avisar que o texto foi copiado
   })
 }
